@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReCaptcha'
-  s.version          = '1.6.0'
+  s.version          = '1.6.1'
   s.summary          = 'ReCaptcha for iOS'
   s.swift_version    = '5.0'
   
@@ -20,7 +20,8 @@ invisibility is not possible.
 
   s.ios.deployment_target = '9.0'
   s.default_subspecs = 'Core'
-
+  s.header_dir = 'recaptchaV2'
+  s.module_name = 'recaptchaV2'
   s.subspec 'Core' do |core|
     core.source_files = 'ReCaptcha/Classes/*'
     core.frameworks = 'WebKit'
